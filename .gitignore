@@ -1,0 +1,4 @@
+target
+.idea
+src/test/resources/reports/*
+src/test/resources/screenshots/*
