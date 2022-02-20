@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite" verbose="1">  <!-- @BeforeSuite -->
+    <listeners>
+        <listener class-name="com.framework.core.BaseTests"></listener>
+    </listeners>
+    <test name="registration test" preserve-order="true"> <!-- @BeforeTest -->
+        <classes>
+            <class name="automationpractise.tests.registrationtests.RegistrationTests"> <!-- @BeforeClass -->
+                <methods>
+                    <include name="validateRegistrationPositiveFlow"/> <!-- @BeforeMethod -->
+                </methods> <!-- @AfterMethod -->
+            </class> <!-- @AfterClass -->
+        </classes>
+    </test> <!-- @AfterTest -->
+
+
+</suite> <!-- @AfterSuite -->

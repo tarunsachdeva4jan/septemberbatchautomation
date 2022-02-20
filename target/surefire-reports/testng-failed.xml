@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression Suite]" parallel="classes">
+  <test thread-count="4" verbose="0" name="login_tests(failed)" parallel="classes">
+    <classes>
+      <class name="automationpractise.tests.registrationtests.RegistrationTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="initializeEnvironment"/>
+          <include name="tearDown"/>
+          <include name="validateRegistrationPositiveFlow"/>
+        </methods>
+      </class> <!-- automationpractise.tests.registrationtests.RegistrationTests -->
+    </classes>
+  </test> <!-- login_tests(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
