@@ -2,12 +2,13 @@
 <suite name="Regression Suite" verbose="1">  <!-- @BeforeSuite -->
     <listeners>
         <listener class-name="com.framework.core.BaseTests"></listener>
+        <!--<listener class-name="com.framework.core.Retry"></listener>-->
     </listeners>
-    <test name="registration test" preserve-order="true"> <!-- @BeforeTest -->
+    <test name="login test" preserve-order="true"> <!-- @BeforeTest -->
         <classes>
-            <class name="automationpractise.tests.registrationtests.RegistrationTests"> <!-- @BeforeClass -->
+            <class name="automationpractise.tests.logintests.LoginTests"> <!-- @BeforeClass -->
                 <methods>
-                    <include name="validateRegistrationPositiveFlow"/> <!-- @BeforeMethod -->
+                    <include name="validateLoginPositiveFlow"/> <!-- @BeforeMethod -->
                 </methods> <!-- @AfterMethod -->
             </class> <!-- @AfterClass -->
         </classes>

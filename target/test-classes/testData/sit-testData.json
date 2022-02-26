@@ -1,7 +1,7 @@
 {
   "validateLoginPositiveFlow": [
     {
-      "username": "hey@abc.com",
+      "username": "hey@ab.com",
       "password": "Testing@1234",
       "accountName": "Tarun Sachdeva"
     }

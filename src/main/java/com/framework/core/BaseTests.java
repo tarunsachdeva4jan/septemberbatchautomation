@@ -17,7 +17,7 @@ public class BaseTests implements ITestListener {
         EnvPropertiesLoader.loadEnvProperties();
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws IOException {
         basePage = new BaseUtils();
         basePage.launchBrowser(EnvPropertiesLoader.browser);

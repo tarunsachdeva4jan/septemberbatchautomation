@@ -11,7 +11,6 @@ public class ExtentTestReporter {
 
     static ExtentReports mainReport = ExtentReporter.getReporter();
     static ThreadLocal<ExtentTest> extentTests = new ThreadLocal<>();
-    ThreadLocal<Integer> testIds = new ThreadLocal<>();
     static Map<Integer, ExtentTest> testMap = new HashMap<Integer, ExtentTest>();
 
     public static ExtentTest startTest(String testCaseName, String description) {
